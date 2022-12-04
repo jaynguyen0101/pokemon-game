@@ -15,7 +15,7 @@ function SearchBox() {
 const PokemonList = () => {
   const { pokemon } = usePokemon();
   return (
-    <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-3">
+    <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 mt-3">
       {pokemon.map((p) => (
         <li
           key={p.id}
@@ -38,7 +38,7 @@ const PokemonList = () => {
 function App() {
   return (
     <PokemonProvider>
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto">
         <SearchBox />
         <PokemonList />
       </div>
