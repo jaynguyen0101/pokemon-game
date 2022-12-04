@@ -69,8 +69,8 @@ function usePokemonSource(): {
   const filteredPokemon = useMemo(
     () =>
       pokemon
-        .filter((p) => p.name.toLowerCase().includes(search.toLowerCase()))
-        .slice(0, 20),
+        .filter((p) => p.name.toLowerCase().includes(search.toLowerCase())),
+        //.slice(0, 20),
     [pokemon, search]
   );
 
